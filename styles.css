@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aeaeae;
+    user-select: none;
+}
+
+#reloadBtn {
+    opacity: 0.9;
+    background-color: #898989;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 0.2s;
+}
+
+#reloadBtn:hover {
+    background-color: #7b7b7b;
+    cursor: pointer;
+}
+
+#canvas {
+    display: flex;
+}
+
+#GameBox {
+    position: relative;
+    margin-top: 150px;
+
+    width: 500px;
+    height: 500px;
+}
+
+#GameBox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+    opacity: 0.9;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 50px;
+    justify-content: space-around;
+    height: 80%;
+}
+
+#text p {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#text h2 {
+    font-family: monospace;
+    font-size: 40px;
+}
+
+#text p strong {
+    color: rgb(217, 215, 213);
+}
+
+#upgrade {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 220px;
+    height: 95%;
+    top: 10px;
+    right: 10px;
+}
+
+.upgradeEl {
+    position: relative;
+    width: 220px;
+    height: 30%;
+    margin-top: 20px;
+}
+
+.upgradeEl:hover {
+    background-color: grey;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.upgradeEl p {
+    opacity: 0.9;
+    position: absolute;
+    font-family: monospace;
+    font-size: 20px;
+    right: 0;
+    top: 90px;
+}
+
+#itemsPop {
+    position: relative;
+    width: 950px;
+    height: 950px;
+    margin-left: 100px;
+}
+
+#itemsPop img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#itemsPop #popImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 950px;
+    height: 950px;
+}
+
+#items {
+    animation: moveItems 2s infinite;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+
+
+@keyframes moveItems {
+    0% {
+        width: 80px;
+        height: 80px;
+    }
+    50% {
+        width: 90px;
+        height: 90px;
+    }
+    100% {
+        width: 80px;
+        height: 80px;
+    }
+}
